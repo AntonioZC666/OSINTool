@@ -85,25 +85,25 @@ npm start
 
 ### TXTParser
 
-![image-20250303203737825](https://djchan-xyz.pages.dev/file/AgACAgUAAyEGAASJIjr1AAICiGfFoxi3bIdwvIiU94eog5ZbiCJeAAL1wzEb3fAwVtcmLMAcq5nmAQADAgADeQADNgQ.png)
+![TXTParser](C:\Users\Zc\Desktop\osin\OSINTool\README\TXTParser.png)
 
 ### CSVParser
 
-![image-20250303203803022](https://djchan-xyz.pages.dev/file/AgACAgUAAyEGAASJIjr1AAICiWfFoxqbPOEoQK6CWQAB1IGh73xkhAAC9sMxG93wMFaYhIPtx2weqQEAAwIAA3kAAzYE.png)
+![CSVParser](C:\Users\Zc\Desktop\osin\OSINTool\img\CSVParser.png)
 
 ### HTMLParser
 
-![image-20250303203818303](https://djchan-xyz.pages.dev/file/AgACAgUAAyEGAASJIjr1AAICimfFoxzLLYq7shI0c8LBIn8n1p5WAAL3wzEb3fAwVmpaMTByYxv2AQADAgADeQADNgQ.png)
+![HTMLParser](C:\Users\Zc\Desktop\osin\OSINTool\img\HTMLParser.png)
 
 ## 预览图
 
 ### 任务列表页（index.html）
 
-![image-20250301183926480](https://djchan-xyz.pages.dev/file/AgACAgUAAyEGAASJIjr1AAICh2fC4-HOyqgoF9BA7GQzpsEpu2L0AAI3wTEb6_wYVsDmm7bD_FC7AQADAgADdwADNgQ.png)
+![Index](C:\Users\Zc\Desktop\osin\OSINTool\img\Index.png)
 
 ### 任务编辑页（edit.html）
 
-![image-20250301183707849](https://djchan-xyz.pages.dev/file/AgACAgUAAyEGAASJIjr1AAIChmfC41tJdUTdt5uvGi1PxAxR2Ce1AAI1wTEb6_wYVtBNUuqQoP4PAQADAgADdwADNgQ.png)
+![Edit](C:\Users\Zc\Desktop\osin\OSINTool\img\Edit.png)
 
 
 
