@@ -93,25 +93,25 @@ npm start
 
 ### TXTParser
 
-![TXTParser](.\img\TXTParser.png)
+![TXTParser](./img/TXTParser.png)
 
 ### CSVParser
 
-![CSVParser](.\img\CSVParser.png)
+![CSVParser](./img/CSVParser.png)
 
 ### HTMLParser
 
-![HTMLParser](.\img\HTMLParser.png)
+![HTMLParser](./img/HTMLParser.png)
 
 ## 🖼️ 预览图
 
 ### 任务列表页（index.html）
 
-![Index](.\img\Index.png)
+![Index](./img/Index.png)
 
 ### 任务编辑页（edit.html）
 
-![Edit](.\img\Edit.png)
+![Edit](./img/Edit.png)
 
 
 

@@ -93,25 +93,25 @@ Built on a **frontend-backend separated** architecture using **Electron** for a 
 
 ### TXTParser
 
-![TXTParser](.\img\TXTParser.png)
+![TXTParser](./img/TXTParser.png)
 
 ### CSVParser
 
-![CSVParser](.\img\CSVParser.png)
+![CSVParser](./img/CSVParser.png)
 
 ### HTMLParser
 
-![HTMLParser](.\img\HTMLParser.png)
+![HTMLParser](./img/HTMLParser.png)
 
 ## 🖼️ UI Previews
 
 ### Task List Page （index.html）
 
-![Index](.\img\Index.png)
+![Index](./img/Index.png)
 
 ### Task Edit Page（edit.html）
 
-![Edit](.\img\Edit.png)
+![Edit](./img/Edit.png)
 
 
 
