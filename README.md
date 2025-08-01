@@ -1,131 +1,139 @@
-## 项目概述
+# 🔬 OSIN
 
-OSINTool 是一个自动化爬虫客户端，包含一个Flask后端和一个Electron客户端，用于执行和管理爬虫任务。
+📘 This README is available in [English](README.md) | [中文](README.zh-CN.md)
 
-## 快速开始
+## 📖 Project Overview
 
-### 安装依赖
+**OSINTool** is an automated web crawling client designed for efficient data collection and management in Open Source Intelligence (OSINT) tasks. The system adopts a clean separation between frontend and backend, built using **Electron** for the desktop client and **Flask** for the backend server.
 
-在`frontend`目录下运行以下命令安装**前端依赖**：
+This architecture allows users to interact with a user-friendly, cross-platform desktop interface while leveraging the power of Python-based asynchronous scraping and scheduling on the backend. OSINTool is capable of managing multiple crawling tasks, parsing various formats (HTML, CSV, TXT), scheduling periodic scraping jobs, and storing results locally using a lightweight database.
+
+Whether you're performing data aggregation, content monitoring, or open-source investigations, OSINTool provides a modular, extensible foundation for automating repetitive web data collection workflows.
+
+## 🚀 Quick Start
+
+### Install Dependencies
+
+Install **frontend dependencies** in the `frontend` directory:
 
 ```bash
 npm install
 ```
 
-在项目根目录下运行以下命令安装**后端依赖**：
+Install **backend dependencies** in the project root directory:
 
 ```bash
 pip install flask flask-cors flask[async] tinydb shortuuid requests lxml pandas aiofiles aiohttp apscheduler playwright
 playwright install
 ```
 
-### 启动前后端
+### Launch Backend and Frontend
 
-在`根目录`启动**Flask后端**：
+Start the **Flask backend** in the project **root directory**:
 
 ```bash
 python app.py
 ```
 
-在`frontend`目录启动**Electron客户端**：
+Start the **Electron client** in the `frontend` directory:
 
 
 ```bash
 npm start
 ```
 
-> 请确保已经安装了 Playwright 所需的浏览器和驱动，可通过 `playwright install` 命令进行安装。
+> Please ensure that the browsers and drivers required by Playwright are installed. Use the command `playwright install` if needed.
 
 
 
-## 技术栈
+## 🧱 Tech Stack
 
-基于**前后端分离**，构建 **Electron** **本地客户端**
+Built on a **frontend-backend separated** architecture using **Electron** for a native desktop client.
 
-### 前端
+### Frontend
 
-- 页面构建：HTML/CSS/JS
-- 客户端开发：Electron
-- 组件库：ElementUI
+- Page development: HTML / CSS / JavaScript
+- Desktop application: Electron
+- UI library: ElementUI
 
-### 后端
+### Backend
 
-- 本地服务器：Flask
-- 数据爬取：Playwirght, Requests
-- 定时任务：APSchedule
-- 数据库：TinyDB
+- Local server: Flask
+- Web scraping: Playwright, Requests
+- Scheduled tasks: APScheduler
+- Database: TinyDB
 
 
 
-## 项目结构
+## 📁 Project Structure
 
 ```
 ├── frontend
-│   ├── edit.html 	 		# 编辑页
-│   ├── index.html  			# 列表页
-│   ├── main.js 			# Electron主进程
+│   ├── edit.html 	 		# Edit page
+│   ├── index.html  	    # List page
+│   ├── main.js 			# Electron main process
 │   ├── package.json
-│   ├── preload.js  			# 预加载脚本（含API）
+│   ├── preload.js  		# Preload script (includes API)
 ├── utils
-│   ├── parsers  			# 解析器
+│   ├── parsers  			# Parsers
 │   │   ├── base.py
 │   │   ├── csv_parser.py
 │   │   ├── html_parser.py
 │   │   └── txt_parser.py
-│   ├── common.py  			# 通用函数
-│   ├── logger.py  			# 日志模块
-│   ├── parser_factory.py  	        # 解析器工厂
-├── app.py  				# Flask后端（含API）
-├── db.json  				# TinyDB数据库
+│   ├── common.py  			# common functions
+│   ├── logger.py  			# log module
+│   ├── parser_factory.py  	# Parsers Factory
+├── app.py  				# Flask application entry point
+├── db.json  				# TinyDB database
 ```
 
 
 
-## 解析器流程图
+## 📊 Parser Flowcharts
 
 ### TXTParser
 
-![TXTParser](C:\Users\Zc\Desktop\osin\OSINTool\README\TXTParser.png)
+![TXTParser](.\img\TXTParser.png)
 
 ### CSVParser
 
-![CSVParser](C:\Users\Zc\Desktop\osin\OSINTool\img\CSVParser.png)
+![CSVParser](.\img\CSVParser.png)
 
 ### HTMLParser
 
-![HTMLParser](C:\Users\Zc\Desktop\osin\OSINTool\img\HTMLParser.png)
+![HTMLParser](.\img\HTMLParser.png)
 
-## 预览图
+## 🖼️ UI Previews
 
-### 任务列表页（index.html）
+### Task List Page （index.html）
 
-![Index](C:\Users\Zc\Desktop\osin\OSINTool\img\Index.png)
+![Index](.\img\Index.png)
 
-### 任务编辑页（edit.html）
+### Task Edit Page（edit.html）
 
-![Edit](C:\Users\Zc\Desktop\osin\OSINTool\img\Edit.png)
-
-
-
-## Todo
-
-- 支持CSV输出
-- 处理OCR/滑动验证码等人机验证
-- CI/CD
-- 支持网页端部署
+![Edit](.\img\Edit.png)
 
 
 
-## SWOT分析
+## ✅ Todo
 
-- **Strengths（优势）**：支持多类型数据解析，自定义程度高 （登录、翻页等），任务调度灵活。
-- **Weaknesses（劣势）**：学习成本高，需网页分析与正则基础；可视化差，没有直观界面；暂时无法应对人机验证等反爬技术。
-- **Opportunities（机会）**：未来可融合AI实现智能爬取，集成如Excel等工具方便数据分析。
-- **Threats（威胁）**：市场已有八爪鱼、EasySpider 等成熟可视化爬取工具；网页反爬技术迭代快 ，需持续更新爬取技术。
+- Support for CSV output
+- Handle OCR / slider CAPTCHAs and other human-verification mechanisms
+- CI/CD pipeline integration
+- Support for web-based deployment
 
 
 
-## 参考项目
+## 🧠 SWOT Analysis
 
-- [八爪鱼采集器](https://www.bazhuayu.com/)
+- **Strengths**：Supports multiple data formats, highly customizable (e.g., login, pagination), and features flexible task scheduling.
+- **Weaknesses**：Steep learning curve; requires knowledge of web structure and regular expressions. Limited visual interface; currently lacks support for anti-bot challenges like CAPTCHAs.
+- **Opportunities**：Potential to integrate AI for intelligent crawling and support export to analysis tools like Excel.
+- **Threats**：Existing competitors like Octoparse and EasySpider offer mature visual interfaces. Web anti-crawling technologies evolve quickly, requiring ongoing maintenance.
+
+
+
+## 🔗 References
+
+- [Octoparse](https://www.bazhuayu.com/)
 - [EasySpider](https://www.easyspider.net/)
